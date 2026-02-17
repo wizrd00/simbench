@@ -18,7 +18,7 @@ _start :
 	mov $0xc9, %rax
 	syscall
 	mov %rax, %rbx
-	mov $0x5ffffffff, %rcx
+	mov $0x6ffffffff, %rcx
 	jmp loop0
 loop0 :
 	cmp $0x00, %rcx
