@@ -81,8 +81,8 @@ inact :
 error :
 	mov $0x01, %rax
 	mov $0x01, %rdi
-	mov %err, %rsi
-	mov %0xf2, %rdx
+	mov $err, %rsi
+	mov $0xf2, %rdx
 	syscall
 	jmp exit
 exit :
