@@ -54,12 +54,6 @@ make clean
 
 Removes the built `simbench` binary and `simbench.o` object file.
 
-## Notes / Caveats
-
-- This is a single-threaded, single-core benchmark — it only stresses scalar integer decrement/compare/jump throughput on one core, not memory bandwidth, SIMD, or multi-core performance.
-- Results are sensitive to CPU frequency scaling, thermal throttling, and background load. For consistent comparisons, pin the process to a core (`taskset`) and disable turbo/frequency scaling if possible.
-- If the `sys_time` syscall fails (returns `-1`), the program prints an error message and exits instead of producing a score.
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
